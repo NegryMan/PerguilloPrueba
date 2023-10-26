@@ -1,6 +1,15 @@
 body{
     margin: 0px;
+    padding: 0px;
 }
 header{
     background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    display: flex;
+    
 }
