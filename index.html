@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="src/scripts/header.js"></script>
-    <script src="src/scripts/slider.js" ></script>
+    <script src="src/scripts/header.js"></script>    
     <title>Perguillo Anuarios</title>
 </head>
 <body>
@@ -20,9 +19,9 @@
             <img class="logo" src="src/img/Perguillo horizontal.jpg" alt="">
                  <nav>
                     <a href="#">Inicio</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Categorias</a>
-                    <a href="#">Estilos</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="categorias.html">Categorias</a>
+                    <a href="estilos.html">Estilos</a>
                 </nav>
         </div>
     </header>
@@ -74,37 +73,34 @@
 
         </div>
         <br>
-        <p>
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-            when an unknown printer took a galley of type and scrambled it to make a type
-        </p>
-        <br>
-        <p>
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-            when an unknown printer took a galley of type and scrambled it to make a type
-        </p>
-        <br>
-        <p>
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-            orem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type
-            when an unknown printer took a galley of type and scrambled it to make a type
-        </p>
-        <br>
+       
+        <div class="populares">
 
+            <h2>ÚLTIMOS AGREGADOS</h2>
 
+            <div class="carrusel-list" id="carrusel-list">
+                <button class="adelante" ><</button>
 
+                <div class="carrusel-track" id="track">
+                    
+                    <div class="carrusel">
+                        <a href=""><img src="src\img\anuario.jpg" alt=""></a>
+                    </div>
+                    <div class="carrusel">
+                        <a href=""><img src="src\img\anuario.jpg" alt=""></a>
+                    </div>
+                    <div class="carrusel">
+                        <a href=""><img src="src\img\anuario.jpg" alt=""></a>
+                    </div>
+
+                </div>  
+                <button class="atras" >></button>              
+            </div>
+
+        </div>
+       
     </section>
 
 </body>
+<script src="src/scripts/slider.js" ></script>
 </html>

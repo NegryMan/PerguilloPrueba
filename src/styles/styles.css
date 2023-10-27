@@ -4,6 +4,7 @@
 body{
     background: #fffffa;
     font-family: poppins;
+    height: 100%;
 }
 /* header */
 header{
@@ -138,9 +139,9 @@ h2{
 }
 
 /* slider */
-/* .populares{
-    
-} */
+.populares{
+    margin: 0px 0 40px;   
+}
 
 .carrusel-list{
     position: relative;
@@ -148,7 +149,7 @@ h2{
     align-items: center;
     height: 400px;
     margin: 0 auto;
-    background-color: #a7c54c7b;
+    background-color: #C7D9AD;
     border-radius: 25px;
 
 }
@@ -201,12 +202,46 @@ h2{
     cursor: pointer;
     border: none;
     font-weight: 700;
-    font-size: large;
+    font-size: 34px;
+    color:#488C04;
 }
 .adelante{
     left:0px
 }
 .atras{
     right: 0px;
+}
+/* nosotros */
+/* seccion */
+.nosotros{
+    display: flex;
+    height: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+/* seccion de la imagen  */
+.nosotros .img-nosotros{
+    width: 50%;        
+    height: 100%;    
+}
+.nosotros .img-nosotros img{
+    width: 100%;
+    height: 100%;
+}
+/* seccion del contenido */
+.nosotros .contenido{
+    width: 50%;
+    margin-left: 50px;
+}
+.contenido ul {
+    list-style: none; /* Oculta el punto de la lista */    
+    padding: 0;
+}
+.contenido .li{    
+  background: url('<svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 7.702-8.5 4.62v9.678c1.567-.865 6.379-3.517 7.977-4.399.323-.177.523-.519.523-.891zm-9.5 4.619-8.5-4.722v9.006c0 .37.197.708.514.887 1.59.898 6.416 3.623 7.986 4.508zm-8.079-5.629 8.579 4.763 8.672-4.713s-6.631-3.738-8.186-4.614c-.151-.085-.319-.128-.486-.128-.168 0-.335.043-.486.128-1.555.876-8.093 4.564-8.093 4.564z" fill-rule="nonzero"/></svg>') center left no-repeat; /* Establece el SVG como fondo */
+  padding-left: 20px; /* Añade espacio a la izquierda para el SVG */
+  background-size: 16px; /* Ajusta el tamaño del SVG según tus necesidades */
+  line-height: 1.5;
 }
 
