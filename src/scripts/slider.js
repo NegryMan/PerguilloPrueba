@@ -1,13 +1,36 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const slider = document.querySelector(".objetos-slider");
-    const adelante = document.querySelector(".botonA");
-    const atras = document.querySelector(".botonAt");
+function App(){}
+    window.onload = function(event){
+      var app= new App();
+      window.app =app;
+    }
+
+App.prototype.processingButton=function(event){
+
+  const btn= event.currentTarget;
+  const carruselList = event.currentTarget.parentNode;
+  const track = event.currentTarget.parentNode.querySelector('#track');
+  const carruse =track.querySelector('.carrusel');
+
+  const carruselWidth =carrusel[0].offsetWidth;
   
-    adelante.addEventListener("click", function() {
-      slider.style.transform = "translateX(-100%)";
-    });
-  
-    atras.addEventListener("click", function() {
-      slider.style.transform = "translateX(0)";
-    });
-  });
+  const trackWidth = track.offsetWidth;
+  const listWidth = carruselList.offsetWidth;
+
+  track.style.left=="" ? leftPosition = track.style.left=0: leftPosition=parseFloat(track.style.left.slice(0,2)* -1);
+
+  btn.dataset.button == "atras" ? prevAction(leftPosition,carruselWidth,track): nextAction(leftPosition,trackWidth,listWidth,carruselWidth, track);
+
+
+}
+
+let prevAction = (leftPosition,carruselWidth, track)=>{
+  if (leftPosition>0){
+    track.style.left=`${-1 *(leftPosition - carruselWidth)}px`;
+  }  
+}
+
+let nextAction = (leftPosition,trackWidth,listWidth,carruselWidth, track)=>{
+  if (leftPosition>(trackWidth - listWidth)){
+    track.style.left=`${-1*(leftPosition + carruselWidth)}px`;
+  }
+}  
