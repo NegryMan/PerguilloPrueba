@@ -1,24 +1,17 @@
 *{margin:0; padding:0;}
 
+/* body */
 body{
     background: #fffffa;
+    font-family: poppins;
 }
+/* header */
 header{
     width: 100%;
     overflow: hidden;
     background-color: black;
     
     
-}
-
-div .texto1{
-    font-family:'Arial Narrow';
-    color: #fff;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    text-align: center;
-    line-height: 400px;
 }
 .wrapper{
     width: 90%;
@@ -34,21 +27,10 @@ header img{
     
     
 }
-.imagen1{
-    background-image: url(jovenes.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
-    opacity: 1;
-
-    height: 70vh;
-}
 header nav{
     float: right;
     line-height: 100px;
 }
-
 header nav a{
     display: inline-block;
     color: #fff;
@@ -70,7 +52,7 @@ header nav a:hover{
 
 .header2 {
     position: fixed;
-    height: 100px;
+    
 }
 .header2 img .logo{
     line-height: 100px;
@@ -80,10 +62,91 @@ header nav a:hover{
     line-height: 100px;
 }
 
+
+/* banner */
+div .texto1{
+    font-family:'Arial Narrow';
+    color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 400px;
+}
+.imagen1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/jovenes.jpg); /* el linear-gradient oscurece la imagen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    opacity: 1;
+
+    height: 70vh;
+}
+
+/* contenido */
+h2{
+    color: #a7c54c;
+}
+.tarjeta{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 10px 5px #939191;    
+    margin:40px auto 40px auto;
+    border-radius: 5px;
+    width: 800px;
+}
+.textotarjeta{
+    /* border: 1px solid; */
+    flex: 5;
+    margin: 30px 15px;
+    text-align: center;    
+    
+}
+.imagenTarjeta{
+    background-image: url(../img/pareja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    height: 300px;
+    width: 400px;
+    flex: 5;
+}
+
 .contenido1 p{
     margin-bottom: 1em;
 }
 
+/* slider */
+.populares{
+    text-align: center;
+}
+.lista{
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+.slider{
+    background-color: #a7c54cb7;
+    height: 300px;
+    width: 950px;
+    border-radius: 15px;
+    margin: 0 auto 0 auto;
+    transition: transform 0.5s ease;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider li{
+    margin:0px 15px;
+    flex: 0 0 100%;
+}
+
+/* cambios */
 @media screen and (max-width: 700px){
     header .logo,
     header nav{
