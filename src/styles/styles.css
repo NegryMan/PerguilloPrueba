@@ -10,9 +10,28 @@ header{
     width: 100%;
     overflow: hidden;
     background-color: black;
-    
-    
+    z-index: 999;
+        
 }
+
+/* cambios */
+@media screen and (max-width: 700px){
+    header .logo,
+    header nav{
+        width:100%;
+        text-align:center;
+        line-height:100px;
+    }
+    .header2{
+        height: 250px;
+    }
+
+    .header2 .logo,
+    .header2 nav{
+        line-height: 50px;
+    }
+}
+
 .wrapper{
     width: 90%;
     max-width: 1000px;
@@ -119,49 +138,75 @@ h2{
 }
 
 /* slider */
-.populares{
-    text-align: center;
-}
-.lista{
-    display: flex;
-    overflow: hidden;
-    max-width: 100%;
+/* .populares{
+    
+} */
+
+.carrusel-list{
     position: relative;
-}
-.slider{
-    background-color: #a7c54cb7;
-    height: 300px;
-    width: 950px;
-    border-radius: 15px;
-    margin: 0 auto 0 auto;
-    transition: transform 0.5s ease;
     display: flex;
-    list-style-type: none;
-    justify-content: center;
     align-items: center;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #a7c54c7b;
+    border-radius: 25px;
+
+}
+.carrusel-track{
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    top: 0;
+    left: 0;
 }
 
-.slider li{
-    margin:0px 15px;
-    flex: 0 0 100%;
+.carrusel{
+    position: relative;    
+    width: 210px;
+    /* padding: 0 18px; */
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+
+}
+.carrusel img{
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3ms ease-in-out;
 }
 
-/* cambios */
-@media screen and (max-width: 700px){
-    header .logo,
-    header nav{
-        width:100%;
-        text-align:center;
-        line-height:100px;
+@media(min-width:769px){
+
+    .carrusel{
+        width: 275px;        
     }
-    .header2{
-        height: auto;
+    .carrusel img{
+        width: 250px;        
     }
 
-    .header2 .logo,
-    .header2 nav{
-        line-height: 50px;
-    }
 }
-
+.carrusel-list button{
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    font-size: large;
+}
+.adelante{
+    left:0px
+}
+.atras{
+    right: 0px;
+}
 
