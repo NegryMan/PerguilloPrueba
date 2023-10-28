@@ -137,6 +137,48 @@ h2{
 .contenido1 p{
     margin-bottom: 1em;
 }
+/* AGREGADO NUEVO DEL SLIDER */
+
+.carousel-inner img{
+    position: relative;    
+    width: 210px;
+    /* padding: 0 18px; */
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+
+}
+.cuadrado-verde {
+    background-color: #C7D9AD; /* Color verde de fondo */
+    padding: 40px; /* Espacio alrededor del carrusel */
+    text-align: justify; /* Centrar el contenido */
+    width: 500px; /* Tamaño deseado del cuadrado */
+    height: 400px;
+    margin: 0 auto; /* Centrar el cuadrado en el centro de la página */
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+.carousel-inner {
+    max-height: 100%; /* Altura máxima del carrusel */
+    
+    
+}
+
+.carousel-item img {
+    max-width: 100%; /* Asegurar que la imagen no sea más ancha que el contenedor del carrusel */
+    max-height: 100%; /* Asegurar que la imagen no sea más alta que el contenedor del carrusel */
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3ms ease-in-out;
+}
+
+
+
+
 
 /* slider */
 .populares{
@@ -153,6 +195,7 @@ h2{
     border-radius: 25px;
 
 }
+
 .carrusel-track{
     display: flex;
     margin: 0 auto;
@@ -190,6 +233,7 @@ h2{
     .carrusel img{
         width: 250px;        
     }
+
 
 }
 .carrusel-list button{
