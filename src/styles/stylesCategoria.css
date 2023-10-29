@@ -67,7 +67,7 @@ header nav a:hover{
 
 /* Carrusel */
 .cuadrado-verde {
-    background-color: rgb(99, 154, 16); /* Color verde de fondo */
+    background-color: #639a10; /* Color verde de fondo */
     padding: 40px; /* Espacio alrededor del carrusel */
     text-align: justify; /* Centrar el contenido */
     width: 820px; /* Tamaño deseado del cuadrado */
@@ -86,4 +86,84 @@ header nav a:hover{
 .carousel-item img {
     max-width: 100%; /* Asegurar que la imagen no sea más ancha que el contenedor del carrusel */
     max-height: 100%; /* Asegurar que la imagen no sea más alta que el contenedor del carrusel */
+    border-radius: 15px;
 }
+
+/* Romero- parte editada(Descripcion- y productos */
+/* texto */
+.descripcion-categ{    
+    margin: 40px 80px;
+}
+
+.descripcion-categ .contenido{
+    text-align: justify;
+}
+/* imgenes de productos */
+.produc-categ{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.produc-categ .fila {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    gap:20px;
+}
+
+.produc-categ .contenedor-img{
+   height: auto;
+   width: 200px;
+}
+
+.contenedor-img .boton{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color:#84d60a92 ;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 15px;
+}
+.contenedor-img button{
+    color: rgb(0, 0, 0);
+    background-color: #E8BE3F;
+    width: 90px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.contenedor-img button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #b59535;
+}
+
+.produc-categ img{
+    height: 200px;
+    width: 190px;
+    border-radius: 15px 15px 0 0
+}
+.produc-conten{
+    text-align: left;
+    padding:10px 30px 10px 30px;
+    background-color:#84d60a92 ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.produc-conten h4{
+    font-weight: bold;
+}
+
+.produc-conten .descripcion{
+    font-size: 16px;
+}
+
+.produc-conten .precio{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
