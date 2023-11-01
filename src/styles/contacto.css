@@ -12,6 +12,8 @@
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
     margin-top: 90px;
+    margin-bottom: 90px;
+
 }
 .container-form h2{
     margin-bottom: 15px;

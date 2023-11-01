@@ -1,0 +1,5 @@
+Coordinaremos la generalizaciones de opciones:
+
+el header y el footer deben de tener un margen con el coneido de la pagina de 15 px salvo en algunas ocaciones(nosotros.html)
+
+los colores deben ser normalizados, tenemos que tener una manera siempre tener la misma paleta de colores
